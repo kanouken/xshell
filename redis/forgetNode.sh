@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-flags_noaddr_node_id="82c901f1159fabf1d8939bbb5a84baf3bae9940c"
+flags_noaddr_node_id="10028dc5522d4e024678fa7481e2e04e8d121f7e"
 
 ip_port=$(redis-cli  cluster nodes | egrep -v 'noaddr|handshake|fail' | awk '{print $2}')
 
